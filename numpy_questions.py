@@ -46,7 +46,7 @@ def max_index(X):
         raise ValueError
 
     index = np.argmax(X)
-                
+
     return index // X.shape[0], index % X.shape[0]
 
 
@@ -71,7 +71,7 @@ def wallis_product(n_terms):
     # terms in the product. For example 10000.
 
     valeurs = np.arange(1, n_terms+1)
-    
+
     valeurs = (4 * valeurs * valeurs) / (4 * valeurs * valeurs - 1)
 
     valeur_pi = 2*np.prod(valeurs)
